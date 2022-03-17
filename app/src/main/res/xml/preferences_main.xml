@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        android:key="prefApiKey"
+        android:summary="Enter an provided API key for paste.ee"
+        android:title="Set API key" />
+    <Preference
+        android:key="prefAccessToken"
+        android:title="API key:" />
+
+    <PreferenceCategory android:title="Get API key:">
+
+        <Preference
+            android:key="prefSignIn"
+            android:summary="Sign into paste.ee here to generate an API key\n\n\t(note - if you get an error saying 'something went wrong', you must be signed into paste.ee in your browser first)\n"
+            android:title="Sign in (recommended)"
+            app:allowDividerAbove="true" />
+
+        <Preference
+            android:key="prefUseCredentials"
+            android:summary="Enter paste.ee username and password to generate an API key\n"
+            android:title="Use credentials" />
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.smol.pst.ui.Home.HomeFragment"
+        android:label="My Pastes"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_viewPaste"
+        android:name="com.smol.pst.ui.ViewPaste.ViewPasteFragment"
+        android:label="View Paste"
+        tools:layout="@layout/fragment_view_paste" />
+
+    <fragment
+        android:id="@+id/navigation_newPaste"
+        android:name="com.smol.pst.ui.NewPaste.NewPasteFragment"
+        android:label="New Paste"
+        tools:layout="@layout/fragment_new_paste" />
+
+    <fragment
+        android:id="@+id/navigation_misc"
+        android:name="com.smol.pst.ui.Misc.MiscFragment"
+        android:label="Misc"
+        tools:layout="@layout/fragment_misc" />
+</navigation>

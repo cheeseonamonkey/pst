@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/icon_list"
+        android:title="My Pastes" />
+
+    <item
+        android:id="@+id/navigation_viewPaste"
+        android:icon="@drawable/icon_list"
+        android:title="View Paste" />
+
+    <item
+        android:id="@+id/navigation_newPaste"
+        android:icon="@drawable/icon_new_paste"
+        android:title="Create Paste" />
+
+    <item
+        android:id="@+id/navigation_misc"
+        android:icon="@drawable/icon_gear"
+        android:title="Misc" />
+
+</menu>

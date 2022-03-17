@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtNumPastes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:fontFamily="sans-serif-light"
+            android:text="0 pastes found"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:text="CheckBox"
+            android:textScaleX="1"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycPasteList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:background="#1A3B9497"
+        android:elevation="1dp"
+        android:outlineProvider="paddedBounds"
+        android:padding="1dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

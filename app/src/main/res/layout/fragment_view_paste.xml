@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ViewPaste.ViewPasteFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="0dp"
+        android:background="#A6EC461C"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:outlineProvider="paddedBounds"
+        android:padding="1dp">
+
+        <TextView
+            android:id="@+id/txtPasteId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="1dp"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtPasteDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="8dp"
+                android:text="TextView"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtPasteTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="TextView"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtPasteDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Descriptiondescription blah blah description"
+        android:textSize="13sp" />
+
+
+</LinearLayout>
